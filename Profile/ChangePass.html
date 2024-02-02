@@ -1,0 +1,39 @@
+<a href="AddUser.html">Sign</a>
+<a href="Login.php">Login</a>
+<hr>
+
+<br><br><br>
+
+<h1><center>ChangePassword</center></h1>
+
+<br>
+<center>
+<form action="ChangePass.php" method="post">
+<table style="background-color: rgba(220,220,220,0.1);">
+    <tr>
+        <td colspan="2"><center style="font-size: 150%; margin: 10px;">ChangePassword</center></td>
+    </tr>
+    <tr>
+        <td><center style="margin: 5px;">New Password</center></td>
+        <td><input type="text" name="newP1" style="margin: 5px;"></td>
+    </tr>
+    <tr>
+        <td><center style="margin: 5px;">Again</center></td>
+        <td><input type="text" name="newP2" style="margin: 5px;"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center style="margin: 10px;"><input type="submit" value="Enter" name="change" style="width: 100px; height: 35px; border-radius: 20px; border: none;"></center></td>
+    </tr>
+</table>
+</form>
+
+<?php
+    echo $e;
+?>
+</center>
+
+<style>
+    table,tr,td{
+        border: 1px solid black;
+    }
+</style>

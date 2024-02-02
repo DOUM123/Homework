@@ -1,0 +1,80 @@
+
+<meta charset="utf-8">
+
+<body id = "b">
+<a href="AddUser.html">Sign</a>
+<a href="Login.php">Login</a>
+<hr>
+
+<div id="signin">
+    <br><br><br><br>
+    <h1><center>Sign</center></h1>
+<br><br>
+<center>
+    <form action="AddUser.php" method="post">
+    <table class = "tab">
+        <tr>
+            <td colspan="2"><center class = "login">Registration</center></td>
+        </tr>
+        <tr>
+            <td><center class = "x">Email</center></td>
+            <td><center><input type="text" name="username"></center></td>
+        </tr>
+        <tr>
+            <td><center class = "x">Password</center></td>
+            <td><center><input type="password" name="password"></center></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><input type="submit" value="sign" class = "xx" name="send"></center></td>
+
+        </tr>
+
+    </table>	
+    </form>
+    <span style="color: red; font-size: large;">
+        <?php 
+            echo $f;	
+        ?>
+        </span>
+</center>
+</div>
+</body>
+
+<style type="text/css">
+
+
+.tab{
+    background-color: rgba(220,220,220,0.5);
+}
+.xx{
+    font-color:#ffffff;
+    background-color: rgb(255,255,0);
+    border: none;
+    margin:5px;
+    width:100px;
+    height: 35px;
+    border-radius: 20px;
+}
+.x{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.login{
+    margin: 5px;
+    font-size: 150%;
+}
+table,tr,td{
+    border: 0px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* #b{
+    background-image: url(8.jpg);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+} */
+
+
+</style>
